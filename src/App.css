@@ -119,6 +119,11 @@ footer> img{
 
 }
 
+footer{
+  background-color:hsl(240, 5%, 96%) ;
+  padding-top: 1rem;
+}
+
 .social-links img{
   padding:20px;
   margin: auto;
