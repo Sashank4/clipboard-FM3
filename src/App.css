@@ -1,38 +1,307 @@
-.App {
+
+.App{
+  background-image: url(./images/bg-header-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
+  align-items: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.intro{
+  width: 90%;
+  margin: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.track{
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 90%;
+  margin: auto;
+}
+
+.intro h1 , .clipboard h1 , .workflow h1 , .clip h1{
+  color:  hsl(210, 10%, 33%);
+  font-size: 40px;
+}
+
+.intro p ,.clipboard p , .workflow p, .clip p{
+  color:  hsl(210, 10%, 33%);
+  font-size: 18px;
+  color:hsl(201, 11%, 66%)
+}
+
+.buttons button{
+  padding: 20px;
+  margin: 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
   color: white;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons button:first-child{
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0px 3px 2px 1px  hsl(171, 72%, 44%);
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.buttons button:last-child{
+  background-color: hsl(233, 100%, 69%) ;
+  box-shadow: 0px 3px 2px 1px hsl(233, 98%, 67%);
+}
+
+.left{
+  width: 90%;
+  height: auto;
+}
+
+ .right{
+  width: 90%;
+  text-align: center;
+  margin: 0rem auto;
+  font-size: 18px;
+  color:hsl(201, 11%, 66%);
+  align-items: center;
+  top: 4rem;
+}
+.details .right .highlight , .cards .card .highlight{
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+  font-size: 25px;
+}
+
+.clipboard{
+  width: 90%;
+  margin: auto;
+}
+.clipboard >img {
+  margin: auto;
+  width: 90%;
+}
+
+.workflow{
+  width: 90%;
+  align-items: center;
+  margin: auto;
+}
+
+.cards{
+  margin: 5rem 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.cards{
+  margin: 3rem 0rem;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+}
+
+  
+.companies img{
+ margin: 3rem;
+}
+
+.clip{
+  width: 90%;
+  align-items: center;
+  margin: 3rem auto 2rem auto;
+}
+
+footer> img{
+  margin: auto;
+  width:70px;
+  height: auto;
+
+}
+
+.social-links img{
+  padding:20px;
+  margin: auto;
+}
+
+@media screen and (min-width:768px) {
+  .App {
+    text-align: center;
+    background-image: url(./images/bg-header-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .intro{
+    
+    width: 50%;
+    margin: auto;
+   
   }
+  
+  .intro img{
+    padding: 2rem;
+    margin-top: 6rem;
+  }
+  
+  .intro h1 , .clipboard h1 , .workflow h1 , .clip h1{
+    color:  hsl(210, 10%, 33%);
+    font-size: 45px;
+  }
+  
+  .intro p ,.clipboard p , .workflow p, .clip p{
+    color:  hsl(210, 10%, 33%);
+    font-size: 18px;
+    color:hsl(201, 11%, 66%)
+  }
+  
+  .buttons button{
+    padding: 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .buttons button:first-child{
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0px 3px 2px 1px  hsl(171, 72%, 44%);
+    ;
+  }
+  
+  .buttons button:last-child{
+    background-color: hsl(233, 100%, 69%) ;
+    box-shadow: 0px 3px 2px 1px hsl(233, 98%, 67%);
+  }
+  
+  .track{
+    margin-top: 13rem;
+  }
+  
+  .track h1{
+    color:  hsl(210, 10%, 33%);
+    font-size: 45px;
+  }
+  
+  .track > p{
+    color:  hsl(210, 10%, 33%);
+    font-size: 18px;
+    padding:0px 24rem;
+    color:hsl(201, 11%, 66%);
+  }
+  
+  .details{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    position: relative;
+    
+    
+  }
+  
+   .left{
+    position: absolute;
+    left:-28px
+  }
+  
+   .right{
+    position: absolute;
+    left: 850px;
+    text-align: left;
+    width: 450px ;
+    font-size: 18px;
+    color:hsl(201, 11%, 66%);
+    align-items: center;
+    top: 4rem;
+  }
+  
+  
+  .details .right .highlight , .cards .card .highlight{
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+    font-size: 25px;
+  }
+  
+  .clipboard{
+    margin-top: 100vh;
+  }
+  .clipboard >img {
+    margin: 3rem auto;
+  }
+  
+  .workflow{
+    margin: 0rem 8rem;
+  }
+  
+  .cards{
+    margin: 5rem 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .card{
+    width: 25%;
+  }
+  
+  .companies img{
+    padding: 2rem 4rem;
+  }
+  
+  .clip{
+    width: 50%;
+    align-items: center;
+    margin: 10rem auto 5rem auto;
+  }
+  
+  footer{
+    height: 10rem;
+    width: 100%;
+    background-color: hsl(240, 5%, 96%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  footer> img{
+    margin: 45px;
+    width:70px;
+    height: auto;
+    margin-left: 6rem;
+  }
+  
+  footer .links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+  .links p{
+    font-size: 22px;
+    padding:20px;
+    color: hsl(210, 10%, 33%) ;
+    cursor: pointer;
+  }
+  
+  .links p:hover{
+    color: hsl(171, 66%, 44%);
+    
+  }
+  
+  .social-links{
+    margin: 50px;
+  }
+  
+  .social-links img{
+    padding:10px;
+    cursor: pointer;
+  }
+  
+  .social-links img:hover{
+    filter: invert(63%) sepia(68%) saturate(439%) hue-rotate(122deg) brightness(85%) contrast(92%);
+  }
+  
 }
